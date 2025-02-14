@@ -8,6 +8,9 @@ $(document).ready(function(){
           // Ocultar elementos dentro de .valentines-day
           $('.valentines-day .heart, .valentines-day .text, .valentines-day .front').hide();
 
+       // Reproducir el sonido
+          $('#sound-effect')[0].play();
+
           // Hacer visible la carta con una animación ondulante
           $('#card').css({'visibility':'visible', 'opacity': 0, 'transform': 'scale(0.1)'});
           $('#card').animate({'opacity': 1}, {duration: 1000, step: function(now, fx) {
